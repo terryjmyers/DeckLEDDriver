@@ -27,3 +27,13 @@ Detailed Design
   5. he motion sensor inputs are disabled during daylight according to monthly averages of civil twilight hours around Philadelphia PA
 7. All LEDs have a timeout timer if left on for more than 3 hours they will turn off
 8. All LEDs will turn off at midnigth on a one shot.
+
+
+TODO:
+
+This was my first BIG project and therefore there are a lot of innefficiencies that I'd like to clean up.  
+
+1. I've combined the pulse timers into a proper struct in my standard template.  I would use this library instead
+2. Store the webpage on the SD card instead of storing it in Flash
+3. Change debug logic to #IFDEF to save memory.
+4.  Change UpdateScanCounter to #IFDEF logic to save memory
